@@ -67,6 +67,7 @@
             <version>${jjwt.version}</version>
             <scope>runtime</scope>
         </dependency>
+
         
         <!-- Lombok -->
         <dependency>
