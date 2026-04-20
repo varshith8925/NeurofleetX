@@ -62,9 +62,19 @@ const AdminReports = () => {
             <h1 className="text-3xl font-bold text-white">Reports & Analytics</h1>
             <p className="text-gray-400 mt-1">Comprehensive fleet performance insights</p>
           </div>
-          <button className="flex items-center space-x-2 bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-lg transition-colors">
+          <button
+            className="flex items-center space-x-2 bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-lg transition-colors"
+            onClick={async () => {
+              try {
+                await bookingService.downloadPDF();
+                toast.success('PDF report downloaded');
+              } catch (err) {
+                toast.error('Failed to download PDF report');
+              }
+            }}
+          >
             <Download className="w-5 h-5" />
-            <span>Export Report</span>
+            <span>Export Report (PDF)</span>
           </button>
         </div>
 
