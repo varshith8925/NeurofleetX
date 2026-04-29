@@ -25,10 +25,4 @@ NeuroFleetX is a full-stack urban mobility and fleet management system built wit
 - Route optimization through Flask, persisted in MySQL through Spring Boot
 - Role-specific dashboards with maps and analytics
 
-## Setup
 
-Follow [`SETUP.md`](/C:/Users/LSW/Desktop/Infosys_internship/SETUP.md).
-
-## Data policy
-
-No seed data or mock business records are included. Create users and operating records through the application and APIs.
